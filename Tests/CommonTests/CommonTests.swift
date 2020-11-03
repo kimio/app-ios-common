@@ -2,9 +2,9 @@
 import XCTest
 import UIKit
 
-@testable import common
+@testable import Common
 
-final class commonTests: XCTestCase {
+final class CommonTests: XCTestCase {
     
     func testExample() {
     }
