@@ -9,9 +9,9 @@
 import UIKit
 
 @available(iOS 13.0, *)
-extension UIWindowSceneDelegate {
+public extension UIWindowSceneDelegate {
     
-    func windowMakeKeyAndVisible(scene: UIScene, viewController: UIViewController) -> UIWindow? {
+    public func windowMakeKeyAndVisible(scene: UIScene, viewController: UIViewController) -> UIWindow? {
         guard let windowScene = scene as? UIWindowScene else { return nil }
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = viewController
@@ -22,9 +22,9 @@ extension UIWindowSceneDelegate {
 }
 
 @available(iOS 9, *)
-extension UIApplicationDelegate {
+public extension UIApplicationDelegate {
     
-    func windowMakeKeyAndVisible(viewController: UIViewController) -> UIWindow? {
+    public func windowMakeKeyAndVisible(viewController: UIViewController) -> UIWindow? {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = viewController
         window.makeKeyAndVisible()
